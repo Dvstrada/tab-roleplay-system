@@ -1,0 +1,58 @@
+/* Roleplay menu styles */
+body, html { margin:0; padding:0; }
+.overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0,0,0,0.6);
+    z-index: 10;
+}
+.menu {
+    background: #222;
+    color: #fff;
+    width: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    max-height: 80%;
+    overflow-y: auto;
+}
+h2 {
+    margin-top:0;
+    font-size:24px;
+    text-align: center;
+}
+.categories, .item-list {
+    margin: 20px 0;
+}
+.category, .item {
+    background: #333;
+    padding: 10px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.category:hover, .item:hover {
+    background: #444;
+}
+.close-btn, #selectorCloseBtn {
+    display:block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background: #555;
+    color:#fff;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    font-size:16px;
+}
+.close-btn:hover, #selectorCloseBtn:hover {
+    background:#666;
+}
+.item.disabled {
+    background: #555;
+    cursor: not-allowed;
+}
